@@ -5,11 +5,7 @@ import YTSearch from 'youtube-api-search'
 import Keys from './secret/apikey.js'
 import SearchBar from './components/search_bar'
 import VideoList from './components/video_list'
-// create a new component // a component is just a function
-// this component should produce some HTML
-// we create a class component
-// parent component must fetch data
-
+import VideoDetail from './components/video_detail'
 
 class App extends Component {
   constructor(props) {
@@ -25,6 +21,7 @@ class App extends Component {
     return (
       <div>
         <SearchBar />
+        <VideoDetail video={this.state.videos[0]} />
         <VideoList videos={this.state.videos}/>
       </div>
     )

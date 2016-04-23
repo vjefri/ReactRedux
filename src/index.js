@@ -1,11 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Keys from './secret/apikey.js'
+
+import SearchBar from './components/search_bar'
 // create a new component // a component is just a function
 // this component should produce some HTML
 // we create a class component
 const App = () => {
-  return <div>Hi!</div>
+  return (
+    <div>
+      <SearchBar />
+    </div>
+  )
 }
 
 // take this components generated HTML and put it on the page

@@ -9,6 +9,10 @@ import VideoList from './components/video_list'
 import VideoDetail from './components/video_detail'
 
 // class components whenever we want to have state
+// whenever we change the state, the components and its children re-render
+// compenent level state
+// in redux state is application level
+
 class App extends Component {
   constructor(props) {
     super(props)
